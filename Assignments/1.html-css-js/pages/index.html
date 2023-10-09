@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="../assests/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assests/css/jquery-confirm.min.css">
+
+</head>
+<body>
+    <script>
+      jQuery(document).ready(function () {
+
+          jQuery(".log-in").confirm({
+              title: 'Confirmation!',
+              content: 'Are you sure want to Log in?'
+          })
+
+      });
+  </script>
+    <div class="card border-0 overflow-hidden m-5 pr-5 pl-5">
+      <div class="card-body">
+  
+        <form class="row g-3 text-start needs-validation" novalidate method="post" action="">
+          <div>
+            <p class="fw-bold text-center bangla-text fs-1"> রেজিস্ট্রেশন করুন </p>
+          </div>
+          <!-- name -->
+          <div class="col-md-4">
+            <label class="form-label text-secondary fw-semibold">
+              <span class="text-danger me-1">*</span>
+              Name
+            </label>
+            <input type="text" name="name" value="" required class="form-control  False">
+            <div class="invalid-feedback">Please enter a Name</div>
+          </div>
+          <!-- mobile -->
+          <div class="col-md-4">
+            <label class="form-label text-secondary fw-semibold">
+              <span class="text-danger me-1">*</span>
+              Mobile
+            </label>
+            <input type="text" name="mobile" value="" required class="form-control  False">
+            <div class="invalid-feedback">Please enter a Mobile Number</div>
+          </div>
+          <!-- password -->
+          <div class="col-md-4">
+            <label class="form-label text-secondary fw-semibold">
+              <span class="text-danger me-1">*</span>
+              Password
+            </label>
+            <input type="password" name="password" value="" required class="form-control  False">
+            <div class="invalid-feedback">Please enter a Password</div>
+          </div>
+          <!-- email -->
+          <div class="col-md-4">
+            <label class="form-label text-secondary fw-semibold">
+              Email
+            </label>
+            <input type="email" name="email" value="" class="form-control  False">
+          </div>
+          <!--  Emergency Contact  -->
+          <div class="col-md-4">
+            <label class="form-label text-secondary fw-semibold">
+              Emergency Contact
+            </label>
+            <input type="text" name="emergency" value="" class="form-control  False">
+          </div>
+          <!-- Home District -->
+          <div class="col-md-4">
+  
+  
+  
+            <label class="form-label text-secondary fw-semibold">
+  
+              <span class="text-danger me-1">*</span>
+  
+              Home District
+            </label>
+            <select name="homeDistrict" required class="form-select searchable-select False">
+  
+  
+  
+              <option value="">Select</option>
+  
+              <option value="Nilphamari">Nilphamari</option>
+  
+              <option value="Rangpur">Rangpur</option>
+  
+              <option value="Mymensingh">Mymensingh</option>
+  
+              <option value="Dhaka">Dhaka</option>
+  
+              <option value="Dinajpur">Dinajpur</option>
+  
+              <option value="Kurigram">Kurigram</option>
+  
+              <option value="Rajshahi">Rajshahi</option>
+  
+            </select>
+            <div class="invalid-feedback">Please enter a Home District</div>
+          </div>
+          <!-- study -->
+          <div class="col-md-6">
+            <label class="form-label text-secondary fw-semibold">
+              Study In (Diploma Engineering)
+            </label>
+            <input type="text" name="study" value="" class="form-control  False">
+          </div>
+          <!-- institute -->
+          <div class="col-md-6">
+            <label class="form-label text-secondary fw-semibold">
+              Institute Name
+            </label>
+            <input type="text" name="institute" value="" class="form-control  False">
+          </div>
+          <!-- technology -->
+          <div class="col-md-4">
+            <label class="form-label text-secondary fw-semibold">
+  
+              Technology
+            </label>
+            <select name="technology" class="form-select searchable-select False">
+  
+  
+              <option value="">Technology</option>
+  
+              <option value="Civil">Civil</option>
+  
+              <option value="Computer">Computer</option>
+  
+              <option value="Electrical">Electrical</option>
+  
+              <option value="Power">Power</option>
+  
+              <option value="Electronics">Electronics</option>
+  
+              <option value="Mechanical">Mechanical</option>
+  
+              <option value="Electromedical">Electromedical</option>
+  
+            </select>
+          </div>
+          <!-- semister -->
+          <div class="col-md-4">
+            <label class="form-label text-secondary fw-semibold">
+              Semister (8th)
+            </label>
+            <input type="text" name="semister" value="" class="form-control  False">
+          </div>
+          <!-- shift -->
+          <div class="col-md-4">
+            <label class="form-label text-secondary fw-semibold">
+  
+              Shift
+            </label>
+            <select name="shift" class="form-select searchable-select False">
+  
+  
+              <option value="">Shift</option>
+  
+              <option value="firstShift">First Shift</option>
+  
+              <option value="secondShift">Second Shift</option>
+  
+              <option value="notApplicable">Not Applicable</option>
+            </select>
+          </div>
+          <!-- present address -->
+          <div class="col-md-6">
+            <label class="form-label text-secondary fw-semibold">
+  
+              Present Address
+            </label>
+            <textarea name="presentAddress" class="form-control  False"></textarea>
+  
+          </div>
+          <!-- permanent address -->
+          <div class="col-md-6">
+            <label class="form-label text-secondary fw-semibold">
+  
+              Permanent Address
+            </label>
+            <textarea name="permanentAdress" class="form-control  False"></textarea>
+          </div>
+          <!-- comment -->
+          <div class="col-md-12">
+            <label class="form-label text-secondary fw-semibold">
+  
+              Comment
+            </label>
+            <textarea name="permanentAdress" class="form-control  False"></textarea>
+          </div>
+          <!-- button -->
+          <div class="text-center bangla-text">
+            <button class="btn btn-primary show-success-flash" type="submit">রেজিস্ট্রেশন</button>
+            <a href="#" class="btn btn-secondary ms-3 log-in" type="button">লগ ইন</a>
+          </div>
+  
+        </form>
+  
+        <!-- <script src="../assets/js/bootstrap-form-validator.js"></script> -->
+        <!-- <script src="../assets/js/jQuery-3.7.1.min.js"></script> -->
+  
+  
+        <script>
+          jQuery(document).ready(function () {
+              let forms = document.querySelectorAll('.needs-validation')
+              let form = forms[0]
+              form.addEventListener('submit', function (event) {
+                  if (!form.checkValidity()) {
+                      event.preventDefault()
+                      event.stopPropagation()
+                  } else {
+                      PWeb.messageBox.showMessage(true, "Registration Success")
+                      form.reset()
+                      event.preventDefault()
+                      event.stopPropagation()
+                      return false
+                  }
+                  form.classList.add('was-validated')
+              }, false)
+          });
+      </script>
+      <script src="../assests/js/lib/pweb.messagebox.js"></script>
+      <script src="../assests/js/bootstrap.bundle.min.js"></script>
+      <script src="../assests/js/lib/confirm/jquery-confirm.min.js"></script>
+      <script src="../assests/js/jquery-3.7.1.min.js"></script>
+  </body>
+</html>
