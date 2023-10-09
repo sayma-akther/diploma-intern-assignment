@@ -1,137 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>HTML Form & Inputs</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="../assests/css/bootstrap.min.css">
+  <script src="../assests/js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
 
-<div class="container mt-5">
+<body class="container mt-5">
 
-    <h2>HTML Contact Form</h2>
-    <form action="#" method="post" enctype="multipart/form-data">
-
-        <label for="first-name">First name</label><br>
-        <input type="text" id="first-name" name="firstName" value="Touhid">
-        <br><br>
-
-        <label for="last-name">Last name</label><br>
-        <input type="text" id="last-name" name="lastName">
-        <br><br>
-
-        <label for="email-address">Email Address</label><br>
-        <input type="email" id="email-address" name="email" required>
-        <br><br>
-
-        <label for="cv">Upload CV</label><br>
-        <input type="file" id="cv" name="cv">
-        <br><br>
-
-        <p>Choose your monster's features:</p>
-        <div>
+  <div class="card ">
+    <h2 class="card-title text-center mt-5">HTML All Inputs are Here</h2>
+    <div class="card-body ">
+      <form class="row g-3 mt-4">
+        <div class="col-md-4">
+          <label for="name" class="form-label">First Name</label>
+          <input type="text" class="form-control" placeholder="Sayma">
+        </div>
+        <div class="col-md-4">
+          <label for="name" class="form-label">Last Name</label>
+          <input type="text" class="form-control" placeholder="Akther">
+        </div>
+        <div class="col-md-4">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-md-4">
+          <label class="form-label">CV Upload</label>
+          <input type="file" id="cv" name="cv" class="form-control">
+        </div>
+        <div class="col-md-4">
+          <p>Choose your monster's features:</p>
+          <div>
             <input type="checkbox" id="scales" name="scales" checked>
-            <label for="scales">Scales</label> <br>
+            <label class="form-label">Scales</label> <br>
+          </div>
+          <div>
+            <input type="checkbox" id="horns" name="scales">
+            <label class="form-label" for="horns">Horns</label> <br>
+          </div>
         </div>
-        <div>
-            <input type="checkbox" id="horns" name="horns">
-            <label for="horns">Horns</label> <br>
+        <div class="col-md-4">
+          <label class="form-label">Color</label> <br>
+          <input type="color" class="form-control" id="head" name="head" value="#87CEEB">
         </div>
-        <br><br>
+        <div class="col-md-4">
+          <label class="form-label">Start date:</label> <br>
+          <input class="form-control" type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01"
+            max="2018-12-31">
+        </div>
+        <div class="col-md-4">
+          <label class="form-label">Choose a time for your appointment:</label> <br>
+          <input class="form-control" type="datetime-local" id="meeting-time" name="meeting-time"
+            value="2018-06-12T19:30" min="2018-06-07T00:00" max="2018-06-14T00:00">
+        </div>
+        <div class="col-md-4">
+          <label class="form-label">Enter your globex.com email:</label> <br>
+          <input class="form-control" type="email" id="email" pattern=".+@hmtmcse\.com" size="30" required>
+        </div>
+        <div class="col-md-4">
+          <label class="form-label" for="month-only">Start month:</label> <br>
+          <input class="form-control" type="month" id="month-only" name="start" min="2018-03" value="2018-05">
+        </div>
+        <div class="col-md-4">
+          <label class="form-label" for="tentacles">Number of tentacles (10-100):</label> <br>
+          <input class="form-control" type="number" id="tentacles" name="tentacles" min="10" max="100">
+        </div>
+        <div class="col-md-4">
+          <label class="form-label" for="pass">Password (8 characters minimum):</label> <br>
+          <input class="form-control" type="password" id="pass" name="password" minlength="8" required>
+        </div>
+        <div class="col-md-4">
+          <input type="radio" id="huey" name="drone" value="huey" checked>
+          <label for="huey">Huey</label> <br>
+          <input type="radio" id="dewey" name="drone" value="dewey">
+          <label for="dewey">Dewey</label> <br>
+        </div>
+        <div class="col-md-4">
+          <label class="cont">Volume</label> <br>
+          <input class="" type="range" id="volume" name="volume" min="0" max="11">
+        </div>
+        <div class="col-md-4 d-flex">
+          <input class="form-control" type="search" id="site-search" name="q">
+          <button class="btn btn-primary">Search</button>
+        </div>
+        <div class="col-md-4">
+          <label class="form-label">Enter your phone number:</label> <br>
+          <input type="tel" class="form-control" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        </div>
+        <div class="col-md-4">
+          <label for="appt" class="form-label">Choose a time for your meeting:</label> <br>
+          <input type="time" class="form-control" id="appt" name="appt" min="09:00" max="18:00" required>
+        </div>
+        <div class="col-md-4">
+          <label class="form-label" for="url">Enter an https:// URL:</label> <br>
+          <input type="url" class="form-control" name="url" id="url" placeholder="https://banglafighter.com"
+            pattern="https://.*" size="30" required>
+        </div>
+        <div class="col-md-4">
+          <label for="camp-week" class="form-label">Choose a week in May or June:</label> <br>
+          <input class="form-control" type="week" name="week" id="camp-week" min="2018-W18" max="2018-W26" required>
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">State</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choose Institute</option>
+            <option value="rangpur">Rangpur Polytechnic Institute</option>
+            <option value="dhaka">Dhaka Polytechnic Institute</option>
+            <option value="rajshahi">Rajshahi Polytechnic Institute</option>
+            <option value="kuri">Kurigram Polytechnic Institute</option>
+            <option value="barishal">Barishal Polytechnic Institute</option>
+            <option value="shilet">Shilet Polytechnic Institute</option>
+          </select>
+        </div>
+        <div class="col-md-4">
+          <input class="form-control" type="image" id="image" alt="Login" src="logo.png">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label">Text Area</label>
+          <textarea class="form-control">This is a Text Area</textarea>
+        </div>
 
-        <label for="head">Color</label> <br>
-        <input type="color" id="head" name="head" value="#e66465">
-        <br><br>
+        <div class="col-12">
+          <input class="favorite styled form-control" type="button" value="Add to favorites">
+        </div>
+        <div class="col-12">
+          <button type="submit" class=" form-control btn btn-success">Reset</button>
+        </div>
+        <div class="col-12">
+          <button type="submit" class=" form-control btn btn-primary">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
 
-        <label for="start">Start date:</label> <br>
-        <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
-        <br><br>
-
-        <label for="meeting-time">Choose a time for your appointment:</label> <br>
-        <input type="datetime-local" id="meeting-time" name="meeting-time" value="2018-06-12T19:30" min="2018-06-07T00:00" max="2018-06-14T00:00">
-        <br><br>
-
-        <label for="email">Enter your globex.com email:</label> <br>
-        <input type="email" id="email"pattern=".+@hmtmcse\.com" size="30" required>
-        <br><br>
-
-        <input id="id" name="id" type="hidden" value="12">
-        <br><br>
-
-        <label for="month-only">Start month:</label> <br>
-        <input type="month" id="month-only" name="start" min="2018-03" value="2018-05">
-        <br><br>
-
-        <label for="tentacles">Number of tentacles (10-100):</label> <br>
-        <input type="number" id="tentacles" name="tentacles" min="10" max="100">
-        <br><br>
-
-        <label for="pass">Password (8 characters minimum):</label> <br>
-        <input type="password" id="pass" name="password" minlength="8" required>
-        <br><br>
-
-        <input type="radio" id="huey" name="drone" value="huey" checked>
-        <label for="huey">Huey</label> <br>
-        <input type="radio" id="dewey" name="drone" value="dewey">
-        <label for="dewey">Dewey</label> <br>
-        <br><br>
-
-        <label for="volume">Volume</label> <br>
-        <input type="range" id="volume" name="volume" min="0" max="11">
-        <br><br>
-
-        <input type="search" id="site-search" name="q">
-        <button>Search</button>
-        <br><br>
-
-        <label for="phone">Enter your phone number:</label> <br>
-        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-        <br><br>
-
-        <label for="appt">Choose a time for your meeting:</label> <br>
-        <input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
-        <br><br>
-
-        <label for="url">Enter an https:// URL:</label> <br>
-        <input type="url" name="url" id="url" placeholder="https://banglafighter.com" pattern="https://.*" size="30" required>
-        <br><br>
-
-        <label for="camp-week">Choose a week in May or June:</label> <br>
-        <input type="week" name="week" id="camp-week" min="2018-W18" max="2018-W26" required>
-        <br><br>
-
-        <label for="textarea">Text Area</label> <br>
-        <textarea id="textarea" name="example" rows="4" cols="50">
-            This is a Text Area
-        </textarea>
-        <br><br>
-
-        <label for="pet-select">Choose a pet:</label><br>
-        <select name="pets" id="pet-select">
-            <option value="">--Please choose an option--</option>
-            <option value="dog">Dog</option>
-            <option value="cat">Cat</option>
-            <option value="hamster">Hamster</option>
-            <option value="parrot">Parrot</option>
-            <option value="spider">Spider</option>
-            <option value="goldfish">Goldfish</option>
-        </select>
-        <br><br>
-
-        <input type="image" id="image" alt="Login" src="logo.png">
-        <br><br>
-
-        <input class="favorite styled" type="button" value="Add to favorites">
-        <br><br>
-
-        <input type="reset" value="Reset">
-        <br><br>
-
-
-        <input type="submit" value="Save">
-    </form>
-
-</div>
-
+  
 </body>
+
 </html>
