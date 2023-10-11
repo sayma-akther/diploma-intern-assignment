@@ -1,0 +1,52 @@
+{% extends "layout/auth-layout.html" %}
+
+{% block content %}
+<form action="otp.html" class="row g-3 needs-validation" novalidate id="registration-form">
+    <div class="col-6">
+        <input type="text" class="form-control" placeholder="First Name" required>
+        <div class="invalid-feedback">
+            Please enter First Name
+        </div>
+    </div>
+    <div class="col-6">
+        <input type="text" class="form-control" placeholder="Last Name">
+    </div>
+    <div class="col-12">
+        <input type="email" class="form-control" placeholder="Email" required>
+        <div class="invalid-feedback">
+            Please enter valid email
+        </div>
+    </div>
+    <div class="col-12">
+        <input type="password" class="form-control" placeholder="New Password"
+               required>
+        <div class="invalid-feedback">
+            You entered a wrong password
+        </div>
+    </div>
+    <div class="col-12">
+        <input type="date" class="form-control" placeholder="Date of birth" required>
+    </div>
+    <div class="col-12">
+        <select class="form-select" aria-label="">
+            <option selected>Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+    </div>
+    <div class="d-grid">
+        <button type="submit" class="btn btn-primary">
+            Register
+        </button>
+        <hr class="mt-3 mb-0">
+    </div>
+    <span class="text-center mt-2">
+        Already have an account?
+    </span>
+    <div class="text-center mt-2">
+        <a href="#" class="btn btn-success">
+            Login
+        </a>
+    </div>
+</form>
+{% endblock %}
