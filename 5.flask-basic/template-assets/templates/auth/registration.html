@@ -1,7 +1,7 @@
 {% extends "layout/auth-layout.html" %}
 
 {% block content %}
-<form action="otp.html" class="row g-3 needs-validation" novalidate id="registration-form">
+<form action="#" class="row g-3 needs-validation" novalidate id="registration-form">
     <div class="col-6">
         <input type="text" class="form-control" placeholder="First Name" required>
         <div class="invalid-feedback">
@@ -49,4 +49,24 @@
         </a>
     </div>
 </form>
+
+<script>
+    jQuery(document).ready(function () {
+        let forms = document.querySelectorAll('.needs-validation')
+        let form = forms[0]
+        form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+            } else {
+                PWeb.messageBox.showMessage(true, "Registration Success")
+                form.reset()
+                event.preventDefault()
+                event.stopPropagation()
+                return false
+            }
+            form.classList.add('was-validated')
+        }, false)
+    });
+</script>
 {% endblock %}

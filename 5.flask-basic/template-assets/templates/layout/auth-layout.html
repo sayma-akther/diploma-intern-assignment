@@ -60,8 +60,30 @@
 </div>
 <!-- ============ End of Footer Section ============ -->
 
+<!-- <script>
+    jQuery(document).ready(function () {
+        let forms = document.querySelectorAll('.needs-validation')
+        let form = forms[0]
+        form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+            } else {
+                PWeb.messageBox.showMessage(true, "Registration Success")
+                form.reset()
+                event.preventDefault()
+                event.stopPropagation()
+                return false
+            }
+            form.classList.add('was-validated')
+        }, false)
+    });
+</script> -->
+
 
 <script src="{{ url_for('basic_controller.static', filename='js/lib/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ url_for('basic_controller.static', filename='js/lib/jquery-3.7.1.min.js') }}"></script>
+<script src="{{ url_for('basic_controller.static', filename='js/lib/pweb.message.box.js') }}"></script>
 
 </body>
 </html>
