@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}Auth Layout{% endblock %}</title>
-    <link href="{{ url_for('basic_controller.static', filename='css/lib/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ url_for('basic_controller.static', filename='css/auth-base.css') }}" rel="stylesheet">
-    <link href="{{ url_for('basic_controller.static', filename='css/footer.css') }}" rel="stylesheet">
+    <link href="{{ url_for('auth_controller.static', filename='css/lib/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('auth_controller.static', filename='css/auth-base.css') }}" rel="stylesheet">
+    <link href="{{ url_for('auth_controller.static', filename='css/footer.css') }}" rel="stylesheet">
 </head>
 <body>
 
@@ -81,9 +81,9 @@
 </script> -->
 
 
-<script src="{{ url_for('basic_controller.static', filename='js/lib/bootstrap.bundle.min.js') }}"></script>
-<script src="{{ url_for('basic_controller.static', filename='js/lib/jquery-3.7.1.min.js') }}"></script>
-<script src="{{ url_for('basic_controller.static', filename='js/lib/pweb.message.box.js') }}"></script>
+<script src="{{ url_for('auth_controller.static', filename='js/lib/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ url_for('auth_controller.static', filename='js/lib/jquery-3.7.1.min.js') }}"></script>
+<script src="{{ url_for('auth_controller.static', filename='js/lib/pweb.message.box.js') }}"></script>
 
 </body>
 </html>
